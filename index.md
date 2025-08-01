@@ -89,10 +89,10 @@ Telegram Bot Manager — это современная платформа, ко�
 ## 🚀 Начать работу
 
 <div style="display: flex; gap: 1rem; margin: 2rem 0; flex-wrap: wrap;">
-  <a href="/quick-start/" class="btn btn-primary">
+  <a href="/docs/quick-start/" class="btn btn-primary">
     📖 Быстрый старт
   </a>
-  <a href="/canvas-guide/" class="btn btn-secondary">
+  <a href="/docs/canvas-guide/" class="btn btn-secondary">
     🎨 Руководство по Canvas
   </a>
   <a href="https://bot-manager.ru/register" class="btn btn-purple">
@@ -106,9 +106,9 @@ Telegram Bot Manager — это современная платформа, ко�
 
 | Раздел | Описание |
 |--------|----------|
-| [📖 Быстрый старт](/quick-start/) | Создание первого бота за 5 минут |
-| [🎨 Canvas Guide](/canvas-guide/) | Подробное руководство по визуальному конструктору |
-| [🔌 API Документация](/api/) | REST API справочник |
+| [📖 Быстрый старт](/docs/quick-start/) | Создание первого бота за 5 минут |
+| [🎨 Canvas Guide](/docs/canvas-guide/) | Подробное руководство по визуальному конструктору |
+| [🔌 API Документация](/docs/api/) | REST API справочник |
 
 ---
 
