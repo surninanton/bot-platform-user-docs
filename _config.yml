@@ -1,0 +1,83 @@
+# GitHub Pages Configuration for Telegram Bot Manager Documentation
+title: "Telegram Bot Manager Documentation"
+description: "Пользовательская документация для Telegram Bot Manager - современной SaaS-платформы для создания и управления Telegram ботами"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://surnin.github.io/bot-platform-user-docs" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugin configuration
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+lang: ru
+author: "Telegram Bot Manager Team"
+
+# Site info
+repository: "surnin/bot-platform-user-docs"
+github_username: surnin
+
+# Navigation
+navigation:
+  - title: "Главная"
+    url: "/"
+  - title: "Быстрый старт"
+    url: "/quick-start/"
+  - title: "Canvas Система"
+    url: "/canvas-guide/"
+  - title: "API"
+    url: "/api/"
+  - title: "GitHub"
+    url: "https://github.com/surnin/telegram-bot-manager"
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+
+# Exclude files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - CHANGELOG.md
+  - LICENSE
+
+# Include files in build
+include:
+  - _pages
+
+# Social links
+social:
+  github: "surnin/telegram-bot-manager"
+  email: "support@telegram-bot-manager.com"
+
+# Analytics (optional)
+# google_analytics: G-XXXXXXXXXX
+
+# Custom variables
+version: "1.2.0"
+main_repo: "https://github.com/surnin/telegram-bot-manager"
+demo_url: "https://demo.telegram-bot-manager.com"
