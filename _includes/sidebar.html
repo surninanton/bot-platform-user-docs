@@ -1,0 +1,88 @@
+<aside class="sidebar">
+    <div class="sidebar-content">
+        <h3>Документация</h3>
+        
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>
+                        🏠 Главная
+                    </a>
+                </li>
+                
+                <li class="nav-section">
+                    <h4>Начало работы</h4>
+                    <ul>
+                        <li>
+                            <a href="{{ '/quick-start/' | relative_url }}" {% if page.url contains 'quick-start' %}class="active"{% endif %}>
+                                🚀 Быстрый старт
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-section">
+                    <h4>Canvas Система</h4>
+                    <ul>
+                        <li>
+                            <a href="{{ '/canvas-guide/' | relative_url }}" {% if page.url contains 'canvas-guide' %}class="active"{% endif %}>
+                                🎨 Canvas Руководство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ '/canvas-guide/#nodes' | relative_url }}">
+                                🔧 Узлы и Блоки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ '/canvas-guide/#workflows' | relative_url }}">
+                                ⚡ Рабочие процессы
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-section">
+                    <h4>API и Интеграция</h4>
+                    <ul>
+                        <li>
+                            <a href="{{ '/api/' | relative_url }}" {% if page.url contains 'api' %}class="active"{% endif %}>
+                                📡 REST API
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ '/api/#authentication' | relative_url }}">
+                                🔐 Аутентификация
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ '/api/#webhooks' | relative_url }}">
+                                🪝 Webhooks
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-section">
+                    <h4>Ресурсы</h4>
+                    <ul>
+                        <li>
+                            <a href="{{ site.main_repo }}" target="_blank" rel="noopener">
+                                📚 GitHub Репозиторий
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ site.demo_url }}" target="_blank" rel="noopener">
+                                🎭 Демо
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <p class="version">Версия {{ site.version }}</p>
+        </div>
+    </div>
+</aside>
