@@ -1,4 +1,4 @@
-# GitHub Pages Configuration for Telegram Bot Manager Documentation
+# Docsy Jekyll Configuration for Telegram Bot Manager Documentation
 title: "Telegram Bot Manager Documentation"
 description: "Пользовательская документация для Telegram Bot Manager - современной SaaS-платформы для создания и управления Telegram ботами"
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -7,7 +7,7 @@ url: "https://surnin.github.io/bot-platform-user-docs" # the base hostname & pro
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
+remote_theme: vsoch/docsy-jekyll
 
 # Plugin configuration
 plugins:
@@ -18,42 +18,47 @@ plugins:
 # SEO settings
 lang: ru
 author: "Telegram Bot Manager Team"
+email: "support@telegram-bot-manager.com"
 
-# Site info
-repository: "surnin/bot-platform-user-docs"
-github_username: surnin
+# GitHub repository settings
+repo: "https://github.com/surnin/bot-platform-user-docs"
+github_user: "surnin"
+github_repo: "bot-platform-user-docs"
+github_branch: "main"
 
-# Navigation
-navigation:
-  - title: "Главная"
-    url: "/"
-  - title: "Быстрый старт"
-    url: "/quick-start/"
-  - title: "Canvas Система"
-    url: "/canvas-guide/"
-  - title: "API"
-    url: "/api/"
-  - title: "GitHub"
-    url: "https://github.com/surnin/telegram-bot-manager"
+# Social links for Docsy theme
+twitter: ""
+linkedin: ""
+dockerhub: ""
 
-# Collections
+# Theme customization
+color: "#667eea"
+logo_pixels: 34
+feedback: true
+
+# Collections for documentation
 collections:
-  guides:
+  docs:
     output: true
-    permalink: /:collection/:name/
+    permalink: /:collection/:path/
 
-# Defaults
+# Defaults for different content types
 defaults:
   - scope:
       path: ""
       type: "pages"
     values:
-      layout: "default"
+      layout: "page"
+  - scope:
+      path: "_docs"
+      type: "docs"
+    values:
+      layout: "page"
   - scope:
       path: ""
-      type: "guides"
+      type: "posts"
     values:
-      layout: "guide"
+      layout: "post"
 
 # Exclude files from build
 exclude:

@@ -1,0 +1,53 @@
+- title: Документация
+  url: docs
+  links:
+    - title: "Главная"
+      url: "/"
+      children:
+        - title: "Обзор платформы"
+          url: "/#что-такое-telegram-bot-manager"
+        - title: "Основные функции"
+          url: "/#основные-функции"
+    - title: "Быстрый старт"
+      url: "/quick-start"
+      children:
+        - title: "Установка и настройка"
+          url: "/quick-start#установка-и-настройка"
+        - title: "Создание первого бота"
+          url: "/quick-start#создание-первого-бота"
+        - title: "Первые шаги"
+          url: "/quick-start#первые-шаги"
+    - title: "Canvas Система"
+      url: "/canvas-guide"
+      children:
+        - title: "Введение в Canvas"
+          url: "/canvas-guide#введение-в-canvas"
+        - title: "Узлы и блоки"
+          url: "/canvas-guide#узлы-и-блоки"
+        - title: "Рабочие процессы"
+          url: "/canvas-guide#рабочие-процессы"
+        - title: "Практические примеры"
+          url: "/canvas-guide#практические-примеры"
+    - title: "API и Интеграция"
+      url: "/api"
+      children:
+        - title: "REST API"
+          url: "/api#rest-api"
+        - title: "Аутентификация"
+          url: "/api#аутентификация"
+        - title: "Webhooks"
+          url: "/api#webhooks"
+        - title: "Примеры интеграции"
+          url: "/api#примеры-интеграции"
+- title: "Ресурсы"
+  url: "resources"
+  links:
+    - title: "GitHub репозиторий"
+      url: "https://github.com/surnin/telegram-bot-manager"
+      external: true
+    - title: "Демо-версия"
+      url: "https://demo.telegram-bot-manager.com"
+      external: true
+    - title: "Примеры ботов"
+      url: "https://github.com/surnin/telegram-bot-examples"
+      external: true

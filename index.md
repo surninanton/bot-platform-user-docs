@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Главная
 description: Telegram Bot Manager - современная SaaS-платформа для создания и управления Telegram ботами
 ---

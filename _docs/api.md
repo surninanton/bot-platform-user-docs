@@ -1,8 +1,6 @@
 ---
-layout: default
 title: API Документация
 description: REST API справочник для Telegram Bot Manager
-permalink: /api/
 ---
 
 # 🔌 API Документация

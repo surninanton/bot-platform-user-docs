@@ -2,7 +2,9 @@ source "https://rubygems.org"
 
 # Jekyll
 gem "jekyll", "~> 4.3"
-gem "minima", "~> 2.5"
+
+# Theme
+gem "docsy-jekyll", :git => "https://github.com/vsoch/docsy-jekyll"
 
 # Plugins
 group :jekyll_plugins do
